@@ -1,5 +1,6 @@
 #include <Servo.h> 
 
+const int potPin = A0; //UPDATED: potentiometer connected to A0
 
 class Flasher
 {
@@ -70,6 +71,11 @@ public:
     servo.detach();
   }
   
+  void SetInterval(int intervalMs) //UPDATED: allow changing sweep speed
+  {
+    updateInterval = intervalMs;
+  }
+
   void Update()
   {
     if((millis() - lastUpdate) > updateInterval)
@@ -97,7 +103,7 @@ Sweeper sweeper2(25);
 void setup() 
 { 
   Serial.begin(9600);
-  pinMode(2, INPUT_PULLUP); //UPDATED: pressed reads LOW
+  pinMode(2, INPUT_PULLUP);
   sweeper1.Attach(6);
   sweeper2.Attach(10);
 } 
@@ -105,15 +111,16 @@ void setup()
  
 void loop() 
 { 
-  int buttonState = digitalRead(2); //UPDATED: read the switch
+  int potVal = analogRead(potPin); //UPDATED: read potentiometer (0–1023)
+  int interval = map(potVal, 0, 1023, 2, 200); //UPDATED: smaller = faster, bigger = slower
+  sweeper1.SetInterval(interval); //UPDATED: apply speed to sweeper 1
+  sweeper2.SetInterval(interval); //UPDATED: apply speed to sweeper 2
   
-  if(digitalRead(2) == LOW) //UPDATED: reads low instead of high
+  if(digitalRead(2) == LOW)
   {
-     sweeper1.Update(); //UPDATED: only sweep when pressed
-     sweeper2.Update(); //UPDATED: only sweep when pressed
+     sweeper1.Update();
+     sweeper2.Update();
      led1.Update();
-
-     //UPDATED: else do nothing (servo stops and holds last position)
   }
   
   led2.Update();
