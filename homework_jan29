@@ -1,0 +1,121 @@
+#include <Servo.h> 
+
+
+class Flasher
+{
+
+	int ledPin;    
+	long OnTime;
+	long OffTime;
+
+	int ledState;    
+	unsigned long previousMillis;  
+
+  public:
+  Flasher(int pin, long on, long off)
+  {
+	ledPin = pin;
+	pinMode(ledPin, OUTPUT);     
+	  
+	OnTime = on;
+	OffTime = off;
+	
+	ledState = LOW; 
+	previousMillis = 0;
+  }
+
+  void Update()
+  {
+    unsigned long currentMillis = millis();
+     
+    if((ledState == HIGH) && (currentMillis - previousMillis >= OnTime))
+    {
+    	ledState = LOW; 
+      previousMillis = currentMillis;  
+      digitalWrite(ledPin, ledState);
+    }
+    else if ((ledState == LOW) && (currentMillis - previousMillis >= OffTime))
+    {
+      ledState = HIGH;  
+      previousMillis = currentMillis;  
+      digitalWrite(ledPin, ledState);	 
+    }
+  }
+};
+
+class Sweeper
+{
+  Servo servo;   
+  int pos;             
+  int increment;       
+  int  updateInterval;      
+  unsigned long lastUpdate; 
+
+public: 
+  Sweeper(int interval)
+  {
+    updateInterval = interval;
+    increment = 1;
+    pos = 0; //UPDATED: initialize so servo doesn't start "random"
+    lastUpdate = 0; //UPDATED: initialize timing
+  }
+  
+  void Attach(int pin)
+  {
+    servo.attach(pin);
+  }
+  
+  void Detach()
+  {
+    servo.detach();
+  }
+  
+  void Update()
+  {
+    if((millis() - lastUpdate) > updateInterval)
+    {
+      lastUpdate = millis();
+      pos += increment;
+      servo.write(pos);
+      Serial.println(pos);
+      if ((pos >= 180) || (pos <= 0))
+      {
+        increment = -increment;
+      }
+    }
+  }
+};
+ 
+ 
+Flasher led1(11, 123, 400);
+Flasher led2(12, 350, 350);
+Flasher led3(13, 200, 222);
+
+Sweeper sweeper1(15);
+Sweeper sweeper2(25);
+ 
+void setup() 
+{ 
+  Serial.begin(9600);
+  pinMode(2, INPUT_PULLUP); //UPDATED: pressed reads LOW
+  sweeper1.Attach(6);
+  sweeper2.Attach(10);
+} 
+ 
+ 
+void loop() 
+{ 
+  int buttonState = digitalRead(2); //UPDATED: read the switch
+  
+  if(digitalRead(2) == LOW) //UPDATED: reads low instead of high
+  {
+     sweeper1.Update(); //UPDATED: only sweep when pressed
+     sweeper2.Update(); //UPDATED: only sweep when pressed
+     led1.Update();
+
+     //UPDATED: else do nothing (servo stops and holds last position)
+  }
+  
+  led2.Update();
+  led3.Update();
+}
