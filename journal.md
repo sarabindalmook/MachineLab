@@ -16,17 +16,16 @@ To debug these issues, I changed one thing at a time and tested the circuit afte
 
 # Homework 2 (Feb 3)
 
-## Part 1
-This part was postponed due to not having access to the Scene Shop.
-
-## Part 2
+First part was postponed due to not having access to the Scene Shop.
 
 ![Minecraft Mood Board](MinecraftMoodBoard.png)
 
-An idea that came to mind is using Minecraft as a direct reference to build a physical 3-D world miniature that functions the way the game does. The goal is not to imitate the look only, but to recreate a world that behaves through mechanics that already exist in the game. Rails and minecart logic could act as the main visible motion in the world. A cart endlessly looping through the environment, triggering actions as it passes certain points.
+Following the video game theme, an idea that came to mind is using Minecraft as a direct reference to build a miniature world that functions the way the game does. The goal is not to imitate the look only, but to recreate a world that behaves through mechanics that already exist in the game. **Rails and minecart logic** could act as the main visible motion in the world. A cart endlessly looping through the environment, triggering actions as it passes certain points. Everything would be built from blocks or cubes to create the environment, with a loose storyline embedded into it (possibly). There is a main player who has a house that exists in the world. Around it, mobs such as zombies, spiders, or skeletons are programmed to move or react to triggers. A skeleton might shoot arrows on a loop, a zombie could slowly approach the house, or an explosion effect could reference a creeper moment.
 
-Everything would be built from blocks or cubes to create the environment, with a loose storyline embedded into it. There is a main player who has a house that exists in the world. Around it, mobs such as zombies, spiders, or skeletons are programmed to move or react to triggers. A skeleton might shoot arrows on a loop, a zombie could slowly approach the house, or an explosion effect could reference a creeper moment.
+Other references from the game could include hidden piston doors that briefly open and close, trapdoors that drop or reveal spaces below, or underground Redstone paths that are partially exposed like a mined cave. Sound elements could activate when certain actions happen, giving feedback similar to the game. And noticing how in Minecraft there is a clear day and night cycle, the installation could play with that shift as well. When the installation is closed, the world exists in a “nighttime” state. The moment someone presses a button, the world switches to daytime.  
 
-Other references from the game could include hidden piston doors that briefly open and close, trapdoors that drop or reveal spaces below, or underground Redstone paths that are partially exposed like a mined cave. Sound elements inspired by note blocks could activate when certain actions happen, giving feedback similar to the game.
+![Minecraft Sketch](MinecraftSketch.png)
 
-And noticing how in Minecraft there is a clear day and night cycle, the installation could play with that shift as well. When the installation is closed, the world exists in a “nighttime” state. The moment someone presses a button, the world switches to daytime.  
+So, I sketched two (very rough) drawings based on what I had in mind. The first sketch on the left is more environmental. You can see a waterfall, greenery, and a small house on one side, and on the other side there’s a truck with a cart, maybe with some figures like zombies or other characters involved. The idea is that this sketch gives a glimpse of multiple elements at once, almost like a snapshot of the whole world. The second sketch is more focused on a central element, which is a treehouse. For me, that feels very typical of Minecraft. Around it, there’s a truck with a cart that I was imagining could hopefully move later on. 
+
+With these two ideas, I think the main thing to consider is whether we want an environmental piece that tells a broader story, or a strong centerpiece for the project. The environmental approach could reflect last project’s city and skyscraper piece, or the boat and waves. The centerpiece approach would be more like a Ferris wheel or a merry-go-round: one larger, central structure that everything revolves around.
