@@ -18,7 +18,7 @@ To debug these issues, I changed one thing at a time and tested the circuit afte
 
 First part was postponed due to not having access to the Scene Shop.
 
-![Minecraft Mood Board](images/MinecraftMood.png)
+![Minecraft Mood boARD](images/MinecraftBoard.png)
 
 Following the video game theme, an idea that came to mind is using Minecraft as a direct reference to build a miniature world that functions the way the game does. The goal is not to imitate the look only, but to recreate a world that behaves through mechanics that already exist in the game. **Rails and minecart logic** could act as the main visible motion in the world. A cart endlessly looping through the environment, triggering actions as it passes certain points. Everything would be built from blocks or cubes to create the environment, with a loose storyline embedded into it (possibly). There is a main player who has a house that exists in the world. Around it, mobs such as zombies, spiders, or skeletons are programmed to move or react to triggers. A skeleton might shoot arrows on a loop, a zombie could slowly approach the house, or an explosion effect could reference a creeper moment.
 
