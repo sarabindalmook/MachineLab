@@ -29,11 +29,13 @@ So, I sketched two (very rough) drawings based on what I had in mind. The first 
 With these two ideas, I think the main thing to consider is whether we want an environmental piece that tells a broader story, or a strong centerpiece for the project. The environmental approach could reflect last project’s city and skyscraper piece, or the boat and waves. The centerpiece approach would be more like a Ferris wheel or a merry-go-round: one larger, central structure that everything revolves around.
 
 # Homework 3 (Feb 5)
-After seeing different mechanical movements, I started thinking about how to physically represent a Minecraft minecart railway. I want to explore how minecarts speed up when they pass over powered rails in the game. For an initial test, I plan to build a small circular railway.
+After looking at previous projects from this class and analyzing the mechanical systems they used, I began thinking about how to physically represent a minecart railway system from Minecraft. In the game, minecarts move along tracks, with certain sections designed to briefly increase the cart’s speed before it returns to a steady motion. As an initial test, I plan to build a small circular railway so the cart’s movement is continuous and easy to observe.
 
-The movement would be driven by a rotating wheel system. To create speed changes, I would use two different gear wheels. Most of the loop would be driven by a larger gear, producing a slower, steady motion. At two specific points along the track, the cart would instead be driven by a smaller gear, causing it to rotate faster and briefly increase the cart’s speed. These sections would be marked in red to reference powered rails in Minecraft. This is one possible way to translate a game mechanic into a physical system.
+![Minecraft Mood boARD](images/MinecraftRailway.png)
 
-One mechanism that informed this idea is a gear movement from 507 Mechanical Movements (Movement 223), which uses uneven gear geometry to create periodic acceleration within a continuous rotation.
+One possible approach to achieving this movement is through a rotating wheel system. To create variations in speed, two different gear sizes could be used. Most of the loop would be driven by a larger gear, producing a slower, steady motion. At two specific points along the track, the cart would instead engage with a smaller gear, causing it to rotate faster and briefly increase the cart’s speed. These sections would be marked in red, referencing powered rails in Minecraft.
 
-Other ideas I considered include a skeleton repeatedly shooting an arrow using a simple pull-and-release mechanism, a character like Steve slowly floating upward to reference creative mode, or a TNT or creeper element that uses timed movement or light to suggest an explosion.
+![Minecraft Mood boARD](images/MinecraftMechanics.png)
+
+Another way to approach this is by using a gear movement from 507 Mechanical Movements (Movement 223), which relies on uneven gear geometry to create periodic changes in speed during a continuous rotation. Because the gear is not evenly shaped, some parts of it transfer motion faster than others as it turns. This causes the output to alternate between slower and faster movement at predictable points in the cycle. Other ideas I considered include a skeleton repeatedly shooting an arrow using a simple pull-and-release mechanism, a character like Steve slowly floating upward to reference creative mode, or a TNT or creeper element that uses timed movement or light to suggest an explosion.
 
