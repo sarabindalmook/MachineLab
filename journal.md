@@ -35,7 +35,7 @@ After looking at previous projects from this class and analyzing the mechanical 
 
 One possible approach to achieving this movement is through a rotating wheel system. To create variations in speed, two different gear sizes could be used. Most of the loop would be driven by a larger gear, producing a slower, steady motion. At two specific points along the track, the cart would instead engage with a smaller gear, causing it to rotate faster and briefly increase the cart’s speed. These sections would be marked in red, referencing powered rails in Minecraft.
 
-![Minecraft Mood boARD](images/MinecraftMechanics.png)
+![Minecraft Mood boARD](images/MinecraftMechanic.png)
 
 Another way to approach this is by using a gear movement from 507 Mechanical Movements (Movement 223), which relies on uneven gear geometry to create periodic changes in speed during a continuous rotation. Because the gear is not evenly shaped, some parts of it transfer motion faster than others as it turns. This causes the output to alternate between slower and faster movement at predictable points in the cycle. Other ideas I considered include a skeleton repeatedly shooting an arrow using a simple pull-and-release mechanism, a character like Steve slowly floating upward to reference creative mode, or a TNT or creeper element that uses timed movement or light to suggest an explosion.
 
