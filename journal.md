@@ -39,3 +39,149 @@ One possible approach to achieving this movement is through a rotating wheel sys
 
 Another way to approach this is by using a gear movement from 507 Mechanical Movements ([Movement 223](https://507movements.com/mm_223.html)), which relies on uneven gear geometry to create periodic changes in speed during a continuous rotation. Because the gear is not evenly shaped, some parts of it transfer motion faster than others as it turns. This causes the output to alternate between slower and faster movement at predictable points in the cycle. Other ideas I considered include a skeleton repeatedly shooting an arrow using a simple pull-and-release mechanism, a character like Steve slowly floating upward to reference creative mode, or a TNT or creeper element that uses timed movement or light to suggest an explosion.
 
+# Homework 4 (Feb 10)
+Today I finished the motor exercise we started in class using a DC motor and an L298N motor driver. One of the main difficulties I ran into was soldering the on and off switch. The three pins at the bottom of the switch were very close together, and at first the solder kept spreading and accidentally connecting neighboring pins. This caused issues where the motor would not turn on or off properly. I fixed this by using less solder, working more slowly, and carefully separating each joint so that none of the pins were bridged. Another issue I encountered was related to wiring. I initially tried to insert a stranded wire directly into the Arduino header. This did not work well because the wire bent easily and made inconsistent contact. To solve this, I soldered a short solid core wire to the end of the stranded wire and then inserted the solid wire into the Arduino.  
+
+Below is the code used for the exercise.
+
+```cpp
+#define enA    9
+#define in1    6
+#define in2    7
+#define button 4
+
+bool direction = false;
+bool lastReading = HIGH;
+bool stableState = HIGH;
+
+unsigned long lastDebounceTime = 0;
+const unsigned long debounceDelay = 30;
+
+void setup() {
+  pinMode(enA, OUTPUT);
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(button, INPUT_PULLUP);
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+}
+
+void loop() {
+  int potValue = analogRead(A0);
+  int pwmOutput = map(potValue, 0, 1023, 0, 255);
+  analogWrite(enA, pwmOutput);
+  bool reading = digitalRead(button);
+
+  if (reading != lastReading) {
+    lastDebounceTime = millis();
+    lastReading = reading;
+  }
+
+  if (millis() - lastDebounceTime > debounceDelay) {
+    if (reading != stableState) {
+      stableState = reading;
+
+      if (stableState == LOW) {
+        direction = !direction;
+
+        if (direction) {
+          digitalWrite(in1, HIGH);
+          digitalWrite(in2, LOW);
+        } else {
+          digitalWrite(in1, LOW);
+          digitalWrite(in2, HIGH);
+        }
+      }
+    }
+  }
+}
+```
+Using the above and my idea from last week, I began by creating a visual base for the mechanism.
+![Minecraft Prototype 3](images/MinecraftPrototype3.png)
+I generated an image of Minecraft rails arranged in a perfect circle (which is not the case in minecraft). Getting this accurate enough to print was more challenging than expected. I placed the rails on a Minecraft grass background and printed the final image at A3 size on semi-glossy, semi-matte paper. After printing, I glued it onto a foam board to give it structural support. I cut a circular opening in the center of the board so the motor shaft could pass through and rotate freely. This solution was not part of my initial plan, but it allowed the motor to be integrated cleanly without interfering with the circular motion. 
+
+![Minecraft Prototype 2](images/MinecraftPrototype1.png)
+Originally, I had planned to build the mechanism using two layers, as shown in my drawing. The idea was to place the motor between the layers, with the minecart moving above it. However, once I began thinking through the physical constraints, I realized this would require a structure to hold the top layer in place. That structure would likely interrupt the circular movement unless the entire mechanism was made much larger, with the support placed farther away from the track. Since this was meant to be a rough prototype, I decided to simplify the design and work with a single layer instead. For the moving element, I created a simple 3D template of a Minecraft minecart, cut it out, and glued it together. To connect it to the motor, I attached a vertical column (an arm) to the minecart.
+
+![Minecraft Prototype 2](images/MinecraftPrototype2.png)
+In terms of Arduino, I programmed the motor to rotate continuously at a slow, steady speed, with a brief increase in speed once per cycle. The full rotation was treated as a virtual 360°, divided in code using time. At a specific point in this cycle, the motor briefly speeds up before returning to its original pace. This speed change stands in for the powered rail sections marked in red in my concept. One issue I faced during this process was that the speed boost did not always occur at the exact same physical location on the rotation. Because the motor setup does not include any positional feedback, the system relies on timing rather than real rotation data. Small variations in motor speed accumulate over time, causing the boost point to drift slightly. This is where the prototype is at right now. I am aware that the speed increase does not always occur at the exact same physical point in the rotation, since the system relies on timing rather than positional feedback. 
+
+Below is the updated code that reflects the current state of the mechanism.
+
+```cpp
+#define enA    9
+#define in1    6
+#define in2    7
+#define button 4
+
+bool direction = false;
+
+//slower base, faster boost
+const int slowPWM  = 55;
+const int fastPWM  = 230;
+
+//timing
+const unsigned long cycleDuration = 4500; //long "rotation"
+const unsigned long boostDuration = 180;  //short punch
+
+unsigned long cycleStart = 0;
+
+//button debounce
+bool lastBtnReading = HIGH, btnStable = HIGH;
+unsigned long btnDebounceT = 0;
+const unsigned long btnDebounceDelay = 30;
+
+void setup() {
+  pinMode(enA, OUTPUT);
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(button, INPUT_PULLUP);
+
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+
+  cycleStart = millis();
+}
+
+void loop() {
+  // direction button
+  bool b = digitalRead(button);
+  if (b != lastBtnReading) {
+    btnDebounceT = millis();
+    lastBtnReading = b;
+  }
+
+  if (millis() - btnDebounceT > btnDebounceDelay) {
+    if (b != btnStable) {
+      btnStable = b;
+      if (btnStable == LOW) {
+        direction = !direction;
+        if (direction) {
+          digitalWrite(in1, HIGH);
+          digitalWrite(in2, LOW);
+        } else {
+          digitalWrite(in1, LOW);
+          digitalWrite(in2, HIGH);
+        }
+      }
+    }
+  }
+
+  // fake 360° cycle
+  unsigned long now = millis();
+  unsigned long elapsed = now - cycleStart;
+
+  if (elapsed >= cycleDuration) {
+    cycleStart = now;
+    elapsed = 0;
+  }
+
+  // speed profile
+  int pwm = (elapsed < boostDuration) ? fastPWM : slowPWM;
+  analogWrite(enA, pwm);
+}
+```
+
+
+
+
