@@ -104,7 +104,7 @@ I generated an image of Minecraft rails arranged in a perfect circle (which is n
 Originally, I had planned to build the mechanism using two layers, as shown in my drawing. The idea was to place the motor between the layers, with the minecart moving above it. However, once I began thinking through the physical constraints, I realized this would require a structure to hold the top layer in place. That structure would likely interrupt the circular movement unless the entire mechanism was made much larger, with the support placed farther away from the track. Since this was meant to be a rough prototype, I decided to simplify the design and work with a single layer instead. For the moving element, I created a simple 3D template of a Minecraft minecart, cut it out, and glued it together. To connect it to the motor, I attached a vertical column (an arm) to the minecart.
 
 ![Minecraft Prototype 2](images/MinecraftPrototype2.png)
-In terms of Arduino, I programmed the motor to rotate continuously at a slow, steady speed, with a brief increase in speed once per cycle. The full rotation was treated as a virtual 360°, divided in code using time. At a specific point in this cycle, the motor briefly speeds up before returning to its original pace. This speed change stands in for the powered rail sections marked in red in my concept. One issue I faced during this process was that the speed boost did not always occur at the exact same physical location on the rotation. Because the motor setup does not include any positional feedback, the system relies on timing rather than real rotation data. Small variations in motor speed accumulate over time, causing the boost point to drift slightly. This is where the prototype is at right now. I am aware that the speed increase does not always occur at the exact same physical point in the rotation, since the system relies on timing rather than positional feedback. 
+In terms of Arduino, I programmed the motor to rotate continuously at a slow, steady speed, with a brief increase in speed once per cycle. The full rotation was treated as a virtual 360 degrees and divided in code using time rather than physical measurement. I used millis() to create a repeating timer that defines this cycle. When the timer reaches the set duration, the cycle restarts. During each cycle, the motor runs at a higher PWM value for a short boost period and a lower PWM value for the rest of the rotation. This speed change stands in for the powered rail sections marked in red in the concept. PWM, or Pulse Width Modulation, is how the Arduino controls motor speed without changing the voltage directly. Instead of sending a continuous power level, the Arduino rapidly switches the signal on and off. Higher PWM values produce faster rotation, while lower values result in slower movement.
 
 Below is the updated code that reflects the current state of the mechanism.
 
@@ -182,6 +182,6 @@ void loop() {
 }
 ```
 
-
+One issue I encountered is that the speed boost does not always occur at the exact same physical location. Since the motor setup does not include positional feedback, the system depends entirely on timing rather than actual rotation data. Small variations in motor speed accumulate over time, which caused the boost point to drift slightly. This is the current state of the prototype.
 
 
