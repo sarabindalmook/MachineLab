@@ -41,7 +41,7 @@ Another way to approach this is by using a gear movement from 507 Mechanical Mov
 
 # Homework 4 (Feb 10/12)
 I continued working on the motor exercise introduced in class. One of the main difficulties I ran into was soldering the on and off switch. The three pins at the bottom of the switch were very close together, and at first the solder kept spreading and accidentally connecting neighboring pins. This caused issues where the motor would not turn on or off properly. I fixed this by using less solder, working more slowly, and carefully separating each joint so that none of the pins were bridged. Another issue I encountered was related to wiring. I initially tried to insert a stranded wire directly into the Arduino header. This did not work well because the wire bent easily and made inconsistent contact. To solve this, I soldered a short solid core wire to the end of the stranded wire and then inserted the solid wire into the Arduino.  
-
+![Minecraft Prototype 4](images/MinecraftPrototype4.png)
 Below is the code used for the exercise.
 
 ```cpp
