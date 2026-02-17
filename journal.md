@@ -184,4 +184,21 @@ void loop() {
 
 One issue I encountered is that the speed boost does not always occur at the exact same physical location. Since the motor setup does not include positional feedback, the system depends entirely on timing rather than actual rotation data. Small variations in motor speed accumulate over time, which caused the boost point to drift slightly. This is the current state of the prototype.
 
+# Homework 5 (Feb 17)
 
+To explore a different approach, I began with the idea of using a light sensor, where the cart would speed up when light conditions changed. My first step was observing the sensor values through the Serial Monitor to understand how the readings behaved. Even under seemingly stable lighting conditions, the values fluctuated slightly. This made it clear that analog input is never perfectly steady, which immediately affected how I thought about detection logic.
+
+![Minecraft Prototype 6](images/MinecraftPrototype6a.png)
+
+Initially, I experimented with fixed thresholds, checking whether the sensor value exceeded a specific number. While this approach worked conceptually, it quickly became apparent that small variations could unintentionally trigger events. To address this, I introduced a baseline that gradually adapts to the light level. Rather than reacting to how bright the environment was, I looked for sudden increases compared to what was normal at that moment. The difference between the current reading and the baseline became the main indicator of change.
+
+From there, I adjusted the sensitivity by changing how big the detected change had to be. Smaller values reacted to tiny shifts, while larger values only responded to more obvious changes. Testing different settings helped me find a balance between being responsive and not triggering too easily. I also reduced the reaction time so the response felt quick and controlled instead of lasting too long. The result is not perfect, but it is fairly accurate. One issue I noticed is that the readings can be disrupted when something like a passing shadow briefly changes the light. Because of this, I would not consider the system fully reliable, even though it behaves as expected most of the time.
+
+![Minecraft Prototype 5](images/MinecraftPrototype5.png)
+
+Additionally, after discussing with my group we thought of a few things to test. I tested using LEDs to simulate a furnace with slight light variations to imitate fire. 
+
+![Minecraft Prototype 7](images/MinecraftPrototype7.png)
+
+
+Rashed and Stefania contributed to the TNT shaking mechanism using a servo motor. Rashed also worked on the treasure chest which opens and closes using a servo motor.
