@@ -194,11 +194,16 @@ Initially, I experimented with fixed thresholds, checking whether the sensor val
 
 From there, I adjusted the sensitivity by changing how big the detected change had to be. Smaller values reacted to tiny shifts, while larger values only responded to more obvious changes. Testing different settings helped me find a balance between being responsive and not triggering too easily. I also reduced the reaction time so the response felt quick and controlled instead of lasting too long. The result is not perfect, but it is fairly accurate. One issue I noticed is that the readings can be disrupted when something like a passing shadow briefly changes the light. Because of this, I would not consider the system fully reliable, even though it behaves as expected most of the time.
 
+During brainstorming, Rashed suggested a few ideas for the Minecraft Machine Lab project. One idea was to divide the piece into sections based on the Nether, the Overworld, and The End. Another idea was a land and cave x ray layout. The land section would include surface elements like a farm, a house, or a furnace, along with small interactions such as a pig reacting to movement. The cave section would include underground elements like ores, minecarts with chests, lighting effects, and rotating objects. From these discussions, we decided on a few simple mechanisms to test, including LED lighting for a furnace effect, a shaking TNT interaction, and a treasure chest that opens and closes using a servo motor.
+
+Below are the templates we used:
+
+![Minecraft Prototype 8](images/MinecraftPrototype8.png)
+
+I tested using LEDs to simulate a furnace with slight light variations to imitate fire. 
+
 ![Minecraft Prototype 5](images/MinecraftPrototype5.png)
 
-Additionally, after discussing with my group we thought of a few things to test. I tested using LEDs to simulate a furnace with slight light variations to imitate fire. 
+Rashed and Stefania contributed to the TNT shaking mechanism using a servo motor. Rashed also worked on the treasure chest which opens and closes using a servo motor.
 
 ![Minecraft Prototype 7](images/MinecraftPrototype7.png)
-
-
-Rashed and Stefania contributed to the TNT shaking mechanism using a servo motor. Rashed also worked on the treasure chest which opens and closes using a servo motor.
