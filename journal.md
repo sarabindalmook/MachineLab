@@ -208,3 +208,17 @@ I tested using LEDs to simulate a furnace with slight light variations to imitat
 Rashed and Stefania contributed to the TNT shaking mechanism using a servo motor. Rashed also worked on the treasure chest which opens and closes using a servo motor.
 
 ![Minecraft Prototype 7](images/MinecraftPrototype7.png)
+
+# Homework 6 (April 3)
+This week I’ve been thinking through three possible directions for my final project.
+
+![Minecraft Prototype 7](images/FinalProject0.png)
+
+The first idea is to continue with the festival and carnival theme from the last Machine Lab class. I’m interested in building a swing ride where the chairs hang from the top and swing outward as the ride spins in circles. I like this option because it gives me a lot to work with in terms of design, which is the part I’m most drawn to. I would want to think carefully about the overall form, the hanging seats, and the way the motion would actually work. Mechanically, I imagine this relying on a motor to rotate the top section so that the suspended swings begin to lift and move outward through the spinning motion.
+
+The second idea is to continue with my group’s project direction. After Minecraft, we started discussing Five Nights at Freddy’s and the idea of creating a jump scare. I already made a small cardboard prototype at home as an exercise, just to test the feeling of the interaction. What interests me here is the mechanism behind surprise. I would want to think more about what kind of movement creates that effect, whether that means a fast pop-out motion, a sudden reveal, or a part that shifts unexpectedly. This could be done with or without a motor depending on how the final mechanism develops.
+
+The third idea is quite different. I’ve always wanted to make some kind of kindness project, so I started thinking about a machine that dispenses short, thoughtful messages, similar to fortune cookies. Instead of it being only symbolic, I’m interested in how the mechanism could support the idea, for example by releasing one message at a time through a simple turning or dispensing action. I like that this option is small, direct, and still meaningful. It also feels like something that could exist in a public setting, where someone could come across it unexpectedly and have a brief but positive interaction with it.
+
+For next week, I’m planning to prototype the third option. Since it’s a new concept, I want to at least get a sense of how it could work physically and what its potential might be.
+
