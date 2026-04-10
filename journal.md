@@ -212,7 +212,7 @@ Rashed and Stefania contributed to the TNT shaking mechanism using a servo motor
 # Homework 6 (April 3)
 This week I’ve been thinking through three possible directions for my final project.
 
-![Minecraft Prototype 7](images/FinalProject0.png)
+![Final Project Ideation](images/FinalProject0.png)
 
 The first idea is to continue with the festival and carnival theme from the last Machine Lab class. I’m interested in building a swing ride where the chairs hang from the top and swing outward as the ride spins in circles. I like this option because it gives me a lot to work with in terms of design, which is the part I’m most drawn to. I would want to think carefully about the overall form, the hanging seats, and the way the motion would actually work. Mechanically, I imagine this relying on a motor to rotate the top section so that the suspended swings begin to lift and move outward through the spinning motion.
 
@@ -221,4 +221,17 @@ The second idea is to continue with my group’s project direction. After Minecr
 The third idea is quite different. I’ve always wanted to make some kind of kindness project, so I started thinking about a machine that dispenses short, thoughtful messages, similar to fortune cookies. Instead of it being only symbolic, I’m interested in how the mechanism could support the idea, for example by releasing one message at a time through a simple turning or dispensing action. I like that this option is small, direct, and still meaningful. It also feels like something that could exist in a public setting, where someone could come across it unexpectedly and have a brief but positive interaction with it.
 
 For next week, I’m planning to prototype the third option. Since it’s a new concept, I want to at least get a sense of how it could work physically and what its potential might be.
+
+# Homework 7 (April 10)
+Last week, I proposed three different ideas, and I ended up choosing the third option because it felt the most worth developing further. I wanted it to feel inviting and playful, so I designed it to be colorful. The idea is simple: small, meaningful messages placed inside clear capsule-like balls, similar to vending machine toys, where each time the user turns the dispenser, one capsule drops out with a short message meant to surprise or uplift whoever receives it.
+![Kind Koncept 6](images/KindKoncept6.png)
+For the form and structure, I based the design on a candy dispenser machine I found online. The shape works well because it already supports the kind of interaction I’m aiming for. The circular turning mechanism would be sized to hold exactly one capsule at a time. When rotated, it allows only a single ball to pass through and drop. To make sure the capsules don’t get stuck, the interior sides would be slightly angled, almost like triangular slopes, so that everything naturally moves toward the dispensing point without jamming. I also explored two different ways the final piece could be presented (still in progress).
+![Kind Koncept 7](images/KindKoncept7.png)
+In terms of making it, I initially planned to rely on materials and tools I could find at home or source online. However, I decided to visit an industrial area in Dubai to explore other options. Luckily, I came across a carpenter who was open to letting me use the space and tools, while also helping guide parts of the process.
+![Kind Koncept 8](images/KindKoncept8.png)
+From there, I created cutouts (using MDF which is more budget-friendly than plywood but prone to swelling with moisture) based on simple measurements, and we began cutting them using a table saw.
+![Kind Koncept 9](images/KindKoncept9.png)
+Since the workshop is closed on Sundays, closes early on weekends, and tends to be busy during weekdays, I haven’t been able to piece everything together yet. This has actually worked in my favor, as I’m holding off on assembling everything until I’m certain about how the mechanism will work and what materials and components are actually available.
+
+
 
