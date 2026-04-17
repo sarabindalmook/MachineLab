@@ -220,7 +220,10 @@ The second idea is to continue with my group’s project direction. After Minecr
 
 The third idea is quite different. I’ve always wanted to make some kind of kindness project, so I started thinking about a machine that dispenses short, thoughtful messages, similar to fortune cookies. Instead of it being only symbolic, I’m interested in how the mechanism could support the idea, for example by releasing one message at a time through a simple turning or dispensing action. I like that this option is small, direct, and still meaningful. It also feels like something that could exist in a public setting, where someone could come across it unexpectedly and have a brief but positive interaction with it.
 
-For next week, I’m planning to prototype the third option. Since it’s a new concept, I want to at least get a sense of how it could work physically and what its potential might be.
+## Next Steps
+For next week, I’m planning to prototype the third option. Since it’s a new concept, I want to at least get a sense of how it could work physically and what its potential might be.  
+<br />
+<br />
 
 # Homework 7 (April 10)
 Last week, I proposed three different ideas, and I ended up choosing the third option because it felt the most worth developing further. I wanted it to feel inviting and playful, so I designed it to be colorful. The idea is simple: small, meaningful messages placed inside clear capsule-like balls, similar to vending machine toys, where each time the user turns the dispenser, one capsule drops out with a short message meant to surprise or uplift whoever receives it.
@@ -233,5 +236,23 @@ From there, I created cutouts (using MDF which is more budget-friendly than plyw
 ![Kind Koncept 9](images/KindKoncept9.png)
 Since the workshop is closed on Sundays, closes early on weekends, and tends to be busy during weekdays, I haven’t been able to piece everything together yet. This has actually worked in my favor, as I’m holding off on assembling everything until I’m certain about how the mechanism will work and what materials and components are actually available.
 
+## Next Steps
+The next step is to continue building and complete as much of the structure as possible.  
+<br />
+<br />
 
+# Homework 8 (April 17)
+This week, the goal was to start assembling the structure and, more importantly, figure out how the internal mechanism would work in practice. A big part of that was understanding how the capsules would move through the machine and how to control that movement so only one is released at a time. I initially tested a few slide configurations, starting with a two-way and then a four-way system, but neither really worked once I thought through how the capsules would behave. What made more sense was a three-way setup that brings everything toward a single central point, which then feeds into the circular mechanism.
+![Kind Koncept 10](images/KindKoncept10.png)
+I began by building the internal frame before completing the full structure. A thick circular wooden piece was cut, with a hole sized exactly to fit one capsule, making sure that only a single ball can pass through at a time. This piece sits within a frame at the back of the machine to keep it from shifting up or down, with an additional backing layer added to prevent any movement back and forth. Most of this process relied on wood glue and very thin nails to gradually build and secure the structure.
+![Kind Koncept 11](images/KindKoncept11.png)
+The circular disk connects to a rotating handle at the front, so turning it releases one capsule per rotation. At the bottom, there is an opening where the capsule is dispensed, and I added a small raised edge so it doesn’t roll out immediately. Also, I added hinges at the top so it can be opened and refilled easily.
+![Kind Koncept 12](images/KindKoncept12.png)
+Once I started testing it, an issue that kept coming up was the capsules overlapping or clustering before reaching the mechanism. Instead of moving cleanly, they would sometimes block each other, which interrupted the flow. To deal with that, I added guiding pieces inside to create a more defined path. A longer middle piece, along with two smaller ones on the sides, helps push everything toward the opening. It definitely improved how the capsules move, but it’s still not 100% reliable. At this stage, the mechanism is coming together well, and the video below shows how it functions from the user’s perspective, as well as from the bottom where the capsule falls.
 
+![Kind Koncept Gif 0](images/KindKonceptGif0.gif)
+
+## Next Steps
+Moving forward, the next step is to make sure the capsules fall in a more consistent/reliable way. Once that's resolved, I can focus on the overall design. This also opens up room to consider any additions, such as integrating a small disposal box for the capsules after use.
+<br />
+<br />
