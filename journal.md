@@ -220,7 +220,7 @@ The second idea is to continue with my group’s project direction. After Minecr
 
 The third idea is quite different. I’ve always wanted to make some kind of kindness project, so I started thinking about a machine that dispenses short, thoughtful messages, similar to fortune cookies. Instead of it being only symbolic, I’m interested in how the mechanism could support the idea, for example by releasing one message at a time through a simple turning or dispensing action. I like that this option is small, direct, and still meaningful. It also feels like something that could exist in a public setting, where someone could come across it unexpectedly and have a brief but positive interaction with it.
 
-## Next Steps
+## Next Steps (Met with Professor Michael on April 3)
 For next week, I’m planning to prototype the third option. Since it’s a new concept, I want to at least get a sense of how it could work physically and what its potential might be.  
 <br />
 <br />
@@ -236,7 +236,7 @@ From there, I created cutouts (using MDF which is more budget-friendly than plyw
 ![Kind Koncept 9](images/KindKoncept9.png)
 Since the workshop is closed on Sundays, closes early on weekends, and tends to be busy during weekdays, I haven’t been able to piece everything together yet. This has actually worked in my favor, as I’m holding off on assembling everything until I’m certain about how the mechanism will work and what materials and components are actually available.
 
-## Next Steps
+## Next Steps (Met with Professor Michael on April 10)
 The next step is to continue building and complete as much of the structure as possible.  
 <br />
 <br />
@@ -252,7 +252,7 @@ Once I started testing it, an issue that kept coming up was the capsules overlap
 
 ![Kind Koncept Gif 0](images/KindKonceptGif0.gif)
 
-## Next Steps
+## Next Steps (Met with Professor Michael on April 17)
 Moving forward, the next step is to make sure the capsules fall in a more consistent/reliable way. Once that's resolved, I can focus on the overall design. This also opens up room to consider any additions, such as integrating a small disposal box for the capsules after use. I am also really happy with the progress made so far and with the decision to pursue this idea/theme. Initially, whether it was video games like Minecraft or Five Nights at Freddy’s, having an installation in the art center was something I was looking forward to, but with that no longer being the case, this direction feels like something that can exist within the environment I am in and actually make sense here.
 <br />
 <br />
