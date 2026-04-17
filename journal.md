@@ -253,6 +253,6 @@ Once I started testing it, an issue that kept coming up was the capsules overlap
 ![Kind Koncept Gif 0](images/KindKonceptGif0.gif)
 
 ## Next Steps
-Moving forward, the next step is to make sure the capsules fall in a more consistent/reliable way. Once that's resolved, I can focus on the overall design. This also opens up room to consider any additions, such as integrating a small disposal box for the capsules after use.
+Moving forward, the next step is to make sure the capsules fall in a more consistent/reliable way. Once that's resolved, I can focus on the overall design. This also opens up room to consider any additions, such as integrating a small disposal box for the capsules after use. I am also really happy with the progress made so far and with the decision to pursue this idea/theme. Initially, whether it was video games like Minecraft or Five Nights at Freddy’s, having an installation in the art center was something I was looking forward to, but with that no longer being the case, this direction feels like something that can exist within the environment I am in and actually make sense here.
 <br />
 <br />
