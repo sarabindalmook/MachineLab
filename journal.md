@@ -256,3 +256,43 @@ Once I started testing it, an issue that kept coming up was the capsules overlap
 Moving forward, the next step is to make sure the capsules fall in a more consistent/reliable way (more research on this part). Once that's resolved, I can focus on the overall design. This also opens up room to consider any additions, such as integrating a small disposal box for the capsules after use. I am also really happy with the progress made so far and with the decision to pursue this idea/theme. Initially, whether it was video games like Minecraft or Five Nights at Freddy’s, having an installation in the art center was something I was looking forward to, but with that no longer being the case, this direction feels like something that can exist within the environment I am in and actually make sense here.
 <br />
 <br />
+
+# Homework 9 (April 24)
+
+For the next step, I looked into existing mechanisms to understand how ball or capsule systems avoid getting stuck, and whether there are solutions I can adapt.
+
+![Kind Koncept 13](images/KindKoncept13.png)
+The first reference I explored was a ping-pong ball dispenser from Elektor Magazine. In this system, the balls are stored inside a slanted Plexiglas tube, allowing gravity to naturally guide them forward. The key part is a rotating cam mechanism. Each time the cam moves back and forth, it releases exactly one ball while blocking the others. This creates a controlled, one-by-one output without overlap. What stood out here is how simple the logic is. Instead of forcing movement, it relies on gravity and a small mechanical interruption to regulate flow.
+
+![Kind Koncept 14](images/KindKoncept14.png)
+The second reference was the Secret Knock Detecting Gumball Machine. This project was useful because it clearly shows the internal structure and interaction between components. However, it does not address the issue of balls getting stuck at the output point. The mechanism works, but there is no discussion of failure cases or how to prevent jams, which is exactly the problem I am trying to solve.
+
+![Kind Koncept 15](images/KindKoncept15.png)
+I also looked at golf ball dispensers and similar machines. These systems typically guide balls through a single, narrow path, making sure that each ball follows a fixed order. Because everything moves in a controlled line, the chances of overlap or blockage are reduced. This idea of enforcing a strict path is something I may need to incorporate into my design.
+
+![Kind Koncept 16](images/KindKoncept16.png)
+Another reference point was industrial sorting systems, specifically spiral conveyors used in factories. These systems move objects gradually along a continuous path, preventing sudden collisions or clustering. This made me think about how I could translate a similar idea into a smaller, more compact version.
+
+![Kind Koncept 17](images/KindKoncept17.png)
+From there, I explored ready-made solutions like toys, including Hot Wheels tracks and other small-scale mechanisms. While they showed smooth movement, they're not fully customizable. Most were either too large, too small, or did not match the exact behavior I needed.
+
+![Kind Koncept 18](images/KindKoncept18.png)
+Because of that, I started considering transparent pipes as a more flexible option. These would allow me to control the diameter, length, and angles while also making the internal movement visible. I have not purchased them yet, since I want to physically test the size and fit of the capsules before committing. I plan to visit a local hardware shop to experiment with different pipe sizes and see whether the capsules can move smoothly without getting stuck. If this works, it could become a practical solution.
+
+![Kind Koncept 19](images/KindKoncept19.png)
+Alongside this, I started working on the content inside the capsules. I wrote a series of short messages, focusing on ideas that could resonate across different ages and feel simple but meaningful. I wanted them to be easy to read, but still leave an impact in a small moment. Some examples include: “if you can’t change it, change the way you think about it.” and “The good you give always finds its way back to you.”
+
+![Kind Koncept 20](images/KindKoncept20.png)
+After that, I printed the messages on both regular paper and 200 gsm matte paper to see how they would behave when folded. The regular paper did not hold its shape well and felt loose, while the thicker paper maintained a cleaner and more structured form. Based on this, I decided to go with the 200 gsm paper.
+
+![Kind Koncept 21](images/KindKoncept21.png)
+I then cut and folded all the notes and placed them into the capsules. It was a bit time-consuming, but also a surprisingly enjoyable process. This step allowed me to prepare a full set of capsules, so that part of the project is now ready to go.
+
+![Kind Koncept 22](images/KindKoncept22.png)
+At the same time, I tested my current prototype with a few people. The capsules successfully dispensed three out of three times, which suggests that the issue may not be as critical as I initially thought. I also paid attention to how people interacted with the capsules themselves. When I first got them, I assumed they would twist open, and it actually took me a moment to realize they needed to be popped open instead. Because of that, I was unsure whether this would be intuitive for others. However, all three participants opened the capsules correctly on their first try without hesitation. This was reassuring, as it showed that the interaction did not need additional instructions. For now, rather than pausing to fully resolve potential issues, I will continue testing while moving forward with the rest of the project, treating these adjustments as something to refine along the way.
+
+## Next Steps
+Next, I want to move into the finishing stage, starting with painting. I looked into how to properly paint MDF, since it tends to absorb moisture. Because of this, the surface needs to be sanded first, then sealed with a primer. I’ll visit Jotun with a small MDF sample to see what they suggest. At the same time, I’ll check for the transparent pipes in-store so I can test the fit before buying. If I don’t find the right size, I’ll order it, but I already have a good idea of where to look. If the pipe solution doesn’t work, it’s not a major issue since the mechanism is already functioning well. I’ll also start scouting for a suitable spot to place the project and hopefully film some interactions for when I present my work.
+
+<br />
+<br />
