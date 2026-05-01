@@ -295,3 +295,31 @@ At the same time, I tested my current prototype with a few people. The capsules 
 Next, I want to move into the finishing stage, starting with painting. I looked into how to properly paint MDF, since it tends to absorb moisture. Because of this, the surface needs to be sanded first, then sealed with a primer. I’ll visit Jotun with a small MDF sample to see what they suggest. Following our meeting with the professor, since the mechanism is already working most of the time, it’s okay to keep it as is. I might still test the transparent pipes just to understand it better for myself, but it’s not a priority. We also discussed the possibility of using solar panels if I decide to include any lighting element, and to start thinking about what the box will stand on, making sure it’s something stable and sturdy. Alongside that, I’ll start scouting for a suitable spot to place the project and hopefully film some interactions for my presentation.
 <br />
 <br />
+# Homework 10 (May 1)
+![Kind Koncept 23](images/KindKoncept23.png)
+![Kind Koncept 24](images/KindKoncept24.png)
+![Kind Koncept 25](images/KindKoncept25.png)
+![Kind Koncept 26](images/KindKoncept26.png)
+![Kind Koncept 27](images/KindKoncept27.png)
+![Kind Koncept 28](images/KindKoncept28.png)
+![Kind Koncept 29](images/KindKoncept29.png)
+![Kind Koncept 30](images/KindKoncept30.png)
+![Kind Koncept 31](images/KindKoncept31.png)
+![Kind Koncept 32](images/KindKoncept32.png)
+![Kind Koncept 33](images/KindKoncept33.png)
+![Kind Koncept 34](images/KindKoncept34.png)
+![Kind Koncept 36](images/KindKoncept36.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
