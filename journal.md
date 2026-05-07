@@ -311,12 +311,11 @@ Next, I want to move into the finishing stage, starting with painting. I looked 
 ![Kind Koncept 36](images/KindKoncept36.png)
 
 
-
 # Final Presentation (May 7)
 
 [Link to presentation](https://canva.link/lusac5j9akj26xd)
 
-Thank you, Professor Michael, for all your guidance, support, and encouragement throughout this semester. Your lessons are ones I will carry with me for a long time, and I truly appreciate the way you made us feel capable of creating meaningful work even after losing access to campus resources. Thank you for constantly encouraging us to trust the process, work with what we had, and believe that we could still do it. I’m very grateful for everything I learned through this class and for the supportive environment you created for us throughout the semester!
+Thank you, Professor Michael, for all your guidance, support, and encouragement! Your lessons are ones I will carry with me for a long time, and I truly appreciate the way you made us feel capable of creating meaningful work even after losing access to campus resources. Thank you for constantly encouraging us to trust the process, work with what we had, and believe that we could still do it. I’m very grateful for everything I learned through this class and for the supportive environment you created for us throughout the semester!
 
 
 
